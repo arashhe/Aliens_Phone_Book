@@ -46,11 +46,9 @@ public class NewContact extends AppCompatActivity {
                 .create(ContactViewModel.class);
 
 
-//        Bundle data  = getIntent().getExtras();
         if(getIntent().hasExtra(MainActivity.CONTACT_ID)){
 
             contactId = getIntent().getIntExtra(MainActivity.CONTACT_ID, 0);
-//            int id = data.getInt(MainActivity.CONTACT_ID);
 
             contactViewModel.get(contactId).observe(this, new Observer<Contact>() {
                 @Override
@@ -89,9 +87,6 @@ public class NewContact extends AppCompatActivity {
 
                     setResult(RESULT_OK , replyIntent);
 
-
-                    /*Contact contact = new Contact(enterName.getText().toString(),enterOccupation.getText().toString());
-                    ContactViewModel.insert(contact);*/
                 }
                 finish();
             }

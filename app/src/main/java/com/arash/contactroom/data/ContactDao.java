@@ -32,8 +32,6 @@ public interface ContactDao {
     LiveData<List<Contact>> getAllContacts();
 
 
-
-    //imported from source
     @Query("SELECT * FROM contact_table WHERE contact_table.id == :id")
     LiveData<Contact> get(int id);
 

@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
     private RecyclerView recyclerView;
     private RecyclerViewAdapter recyclerViewAdapter;
-//    private LiveData<List<Contact>> contactList;
 
 
     @Override
@@ -39,10 +38,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //textView = findViewById(R.id.row_occupation_textView);
 
         recyclerView = findViewById(R.id.recycler_view);
-
 
 
         contactViewModel = new
@@ -61,13 +58,6 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
                 recyclerView.setAdapter(recyclerViewAdapter);
 
 
-//                StringBuilder builder = new StringBuilder();
-//                for (Contact contact : contacts) {
-//                    builder.append(" -- ").append(contact.getName()).append(" = ").append(contact.getOccupation());
-//                }
-//                Log.d("TAG", "onChanged: "+ contacts.get(0).getName());
-//
-//                textView.setText(builder.toString());
             }
         });
 

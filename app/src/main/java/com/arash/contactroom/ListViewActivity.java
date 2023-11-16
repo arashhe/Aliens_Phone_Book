@@ -55,7 +55,7 @@ public class ListViewActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Log.d("Listtt", "onItemClick: "+contactArayList.get(i));
+//                Log.d("Listtt", "onItemClick: "+contactArayList.get(i));
             }
         });
 
